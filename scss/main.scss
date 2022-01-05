@@ -5,3 +5,87 @@
 @import 'base/fonts';
 @import 'base/typography';
 
+.container {
+   width: 100%;
+   max-width: 1000px;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+.icon {
+	display: inline-block;
+}
+
+svg {
+   width: 100%;
+   height: 100%;
+}
+
+.header {
+   background: linear-gradient(to bottom, #383b46, #292b32);
+   padding: 20px 0;
+   @media screen and (max-width: 480px) {
+      padding: 15px 0;
+   }
+   .content {
+      display: flex;
+      justify-content: space-between;
+   }
+   .logo-block {
+      p {
+         color: $hard-grey;
+         font-size: 12px;
+         line-height: 14px;
+         @media screen and (max-width: 480px) {
+            font-size: 11px;
+         }
+      }
+      .logo {
+         display: inline-flex;
+      }
+   }
+   .search-block {
+      display: flex;
+      height: 36px;
+      margin-left: 15px;
+      @media screen and (max-width: 480px) {
+         margin-left: 10px;
+      }
+      .search-input {
+         width: 100%;
+         max-width: 196px;
+         min-width: 150px;
+         background-color: $light-black;
+         padding: 0 10px;
+         border: 1px solid $brown;
+         border-radius: 4px;
+         box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.25);
+         font-size: 14px;
+         line-height: 1;
+         @media screen and (max-width: 480px) {
+            font-size: 12px;
+         }
+         &::placeholder {
+            color: $medium-grey;
+         }
+      }
+      .search-btn {
+         display: flex;
+         align-items: center;
+         background-color: $bright-brown;
+         opacity: 1;
+         border-radius: 4px;
+         padding: 0 10px;
+         margin-left: 10px;
+         transition: all 0.2s ease-in;
+         &:hover {
+            opacity: 0.8;
+         }
+         .search {
+            width: 13px;
+            height: 13px;
+            fill: $white;
+         }
+      }
+   }
+}
