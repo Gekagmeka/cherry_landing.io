@@ -5,6 +5,17 @@
 @import 'base/fonts';
 @import 'base/typography';
 
+.black {
+   color: $black;
+}
+.middle-black {
+   color: $middle-black;
+}
+
+.light-grey {
+   color: $light-grey;
+}
+
 .container {
    width: 100%;
    max-width: 1000px;
@@ -30,6 +41,10 @@ svg {
    .content {
       display: flex;
       justify-content: space-between;
+      padding: 0 8px;
+      @media screen and (max-width: 480px) {
+         padding: 0;
+      }
    }
    .logo-block {
       p {
@@ -86,6 +101,55 @@ svg {
             height: 13px;
             fill: $white;
          }
+      }
+   }
+}
+
+.main {
+   .container {
+      @media screen and (max-width: 1000px) {
+         padding: 0;
+      }
+   }
+}
+
+.top-block {
+   overflow: hidden;
+}
+.slick {
+   .slick-slide {
+      min-height: 240px;
+      padding: 40px 40px 15px;
+      background-image: url(../images/bg-01.png);
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media screen and (max-width: 600px) {
+         padding: 20px;
+      }
+      @media screen and (max-width: 375px) {
+         padding: 20px 10px 10px;
+      }
+      .slick-content {
+         max-width: 490px;
+      }
+      h2 {
+         &::first-letter {
+            color: $bright-brown;
+         }
+      }
+      h3 {
+         &.middle-black {
+            padding-bottom: 15px;
+            @media screen and (max-width: 375px) {
+               padding-bottom: 10px;
+            }
+         }
+      }
+      p {
+         font-size: 14px;
+         line-height: 18px;
+         color: $light-grey2;
       }
    }
 }
