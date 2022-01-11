@@ -256,4 +256,57 @@ svg {
   line-height: 18px;
   color: #d9dcdf;
 }
+
+.main {
+  background-color: #e4e3e4;
+}
+
+.nav-block .content {
+  background-color: #95161f;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-block .nav {
+    display: none;
+  }
+}
+
+.nav-block .nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-block .nav .list-item {
+  margin: 0 25px;
+}
+
+.nav-block .nav .list-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-block .burger-menu {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-block .burger-menu {
+    display: block;
+  }
+}
 /*# sourceMappingURL=main.css.map */

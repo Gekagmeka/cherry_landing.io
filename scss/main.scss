@@ -8,6 +8,7 @@
 .black {
    color: $black;
 }
+
 .middle-black {
    color: $middle-black;
 }
@@ -150,6 +151,45 @@ svg {
          font-size: 14px;
          line-height: 18px;
          color: $light-grey2;
+      }
+   }
+}
+
+.main {
+   background-color: $light-grey3;
+}
+
+.nav-block {
+   .content {
+      background-color: $bright-brown2;
+      padding: 10px 0;
+      display: flex;
+      justify-content: flex-end;
+   }
+   .nav {
+      @media screen and (max-width: 768px) {
+         display: none;
+      }
+      .list {
+         display: flex;
+         justify-content: flex-end;
+      }
+      .list-item {
+         margin: 0 25px;
+      }
+      .list-link {
+         font-size: 16px;
+         font-weight: 700;
+         color: $white;
+      }
+   }
+   .burger-menu {
+      width: 30px;
+      height: 30px;
+      background-color: #fff;
+      display: none;
+      @media screen and (max-width: 768px) {
+         display: block;
       }
    }
 }
