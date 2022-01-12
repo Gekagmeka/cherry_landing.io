@@ -192,4 +192,40 @@ svg {
          display: block;
       }
    }
+   .checked-content {
+      padding: 8px 25px;
+      background-color: $light-grey4;
+      @media screen and (max-width: 768px) {
+         display: none;
+      }
+      .list {
+         display: flex;
+         .list-item {
+            margin-right: 8px;
+            &:last-child {
+               .list-link {
+                  color: $medium-grey2;
+                  text-decoration: none;
+               }
+            }
+            &::after {
+               content: '/';
+               display: inline-block;
+               margin-left: 4px;
+               font-size: 11px;
+               color: $medium-grey2;
+            }
+            &:last-child {
+               &::after {
+                  display: none;
+               }   
+            }
+            .list-link {
+               font-size: 11px;
+               color: $bright-brown2;
+               text-decoration: underline;
+            }
+         }
+      }
+   }
 }

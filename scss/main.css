@@ -309,4 +309,48 @@ svg {
     display: block;
   }
 }
+
+.nav-block .checked-content {
+  padding: 8px 25px;
+  background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-block .checked-content {
+    display: none;
+  }
+}
+
+.nav-block .checked-content .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-block .checked-content .list .list-item {
+  margin-right: 8px;
+}
+
+.nav-block .checked-content .list .list-item:last-child .list-link {
+  color: #6b6f74;
+  text-decoration: none;
+}
+
+.nav-block .checked-content .list .list-item::after {
+  content: '/';
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 11px;
+  color: #6b6f74;
+}
+
+.nav-block .checked-content .list .list-item:last-child::after {
+  display: none;
+}
+
+.nav-block .checked-content .list .list-item .list-link {
+  font-size: 11px;
+  color: #95161f;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=main.css.map */
