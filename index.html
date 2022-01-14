@@ -163,10 +163,10 @@
                <div class="container">
                   <div class="content">
                      <div class="sidebar">
-                        <form action="contact">
-                           <h3>
+                        <form action="contact" class="contacts">
+                           <h4>
                               Contact Us
-                           </h3>
+                           </h4>
                            <div class="form-group">
                               <input class="form-control" type="text" name="user" placeholder="Your Name">
                            </div>
@@ -180,19 +180,37 @@
                               <input class="form-control" type="text" name="country" placeholder="City">
                            </div>
                            <div class="form-group">
-                               <label for="select" class="select">
-                                 <input type="radio" name="list" value="not_changed" id="problems" checked>
-                                 <input type="radio" name="list" value="not_changed" id="select">
-                                 <label class="problems" for="problems"></label>
-                                 <div class="items">
-                                   <input type="radio" name="list" value="first_value" id="list[0]">
-                                   <label for="list[0]">First option</label>
-                                   <input type="radio" name="list" value="second_value" id="list[1]">
-                                   <label for="list[1]">Second loooooong option</label>
-                                   <span id="text">Select something...</span>
-                                 </div>
+                             <label for="select" class="select">
+                                <input type="radio" name="list" value="not_changed" id="bg" checked />
+                                <input type="radio" name="list" value="not_changed" id="select">
+                                <label class="bg" for="bg"></label>
+                                <div class="items">
+                                    <input type="radio" name="list" value="first_value" id="list[0]">
+                                    <label for="list[0]">First option</label>
+                                    <input type="radio" name="list" value="second_value" id="list[1]">
+                                    <label for="list[1]">Second option</label>
+                                    <input type="radio" name="list" value="third_value" id="list[2]">
+                                    <label for="list[2]">Third option</label>
+                                    <span id="text">Problem With</span>
+                                </div>
                              </label>
-                           </div>
+                          </div>
+                          <div class="form-group">
+                           <label for="select2" class="select">
+                              <input type="radio" name="brand-list" value="not_changed" id="bg2" checked />
+                              <input type="radio" name="brand-list" value="not_changed" id="select2">
+                              <label class="bg" for="bg2"></label>
+                              <div class="items">
+                                  <input type="radio" name="brand-list" value="first_value" id="brand-list[0]">
+                                  <label for="brand-list[0]">First option</label>
+                                  <input type="radio" name="brand-list" value="second_value" id="brand-list[1]">
+                                  <label for="brand-list[1]">Second option</label>
+                                  <input type="radio" name="brand-list" value="third_value" id="brand-list[2]">
+                                  <label for="brand-list[2]">Third option</label>
+                                  <span id="text2">Brand</span>
+                              </div>
+                           </label>
+                        </div>
                         </form>
                      </div>
                      <div class="main-block">
